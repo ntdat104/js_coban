@@ -1,10 +1,10 @@
 console.log("========== JAVASCRIPT CƠ BẢN ==========");
 /*
-* Math.random();
-* Math.floor() - làm tròn xuống.
-* Math.cell() - làm tròn lên.
-* Math.round() - Làm tròn gần nhất.
-*/
+ * Math.random();
+ * Math.floor() - làm tròn xuống.
+ * Math.cell() - làm tròn lên.
+ * Math.round() - Làm tròn gần nhất.
+ */
 //==================================================================================================//
 console.log("========== Bài 1: Biến và kiểu dữ liệu ==========");
 //! Bài 1: Biến và kiểu dữ liệu
@@ -22,14 +22,14 @@ isMarried = false;
 job = "teacher";
 console.log("isMarried = ", isMarried);
 
-age = "twenty eight"; //TODO Đột biến giá trị (Lúc đầu age = 28, lúc sau age = "twenty eight")
+age = "twenty eight"; //TODO Đột biến giá trị (Lúc đầu age = 28, lúc sau age = 'twenty eight')
 console.log(
   firstName + " is a " + age + " year old" + job + " Is married? " + isMarried
 );
 
 //TODO Toán tử trong JS
 /*
- * x = y // x = y (Toán tử gán)
+ * x = y // x = y //? (Toán tử gán)
  * x += y // x = x + y //? (Cộng xong rồi gán)
  * x -= y // x = x - y //? (Trừ xong rồi gán)
  * x *= y // x = x * y //? (Nhân xong rồi gán)
@@ -157,8 +157,7 @@ if (height2 === 23) {
 //==================================================================================================//
 console.log("========== Bài 5: Function trong Javascript ==========");
 //! Bài 5: Function trong Javascript
-
-//? Hàm là một đoạn chương trình độc lập, thực hiện một khối chức năng nhất định nào đó, sau khi thực hiện xong => Trả về một giá trị cho chương trình gọi nó. Chia nhỏ code.
+//* Hàm là một đoạn chương trình độc lập, thực hiện một khối chức năng nhất định nào đó, sau khi thực hiện xong => Trả về một giá trị cho chương trình gọi nó. Chia nhỏ code.
 
 var yearJohn = 0;
 
@@ -260,7 +259,11 @@ console.log("========== Bài 7: Một số Methods cơ bản của Array =======
 //! Bài 7: Một số Methods cơ bản của Array
 
 var arrDemo = ["Smith", "John", 20, true, "John", "John", 2020];
+var arrDemo2 = ["Đạt", "Hiếu", "Phúc"];
 console.log("arrDemo = ", arrDemo);
+
+//TODO Nối 2 Array lại với nhau.
+console.log("arrDemo.concat(arrDemo2) = ", arrDemo.concat(arrDemo2));
 
 //TODO Thêm 1 giá trị mới vào Array (Thêm vào vị trí sau cùng của Array), sau khi thêm thì trả về length mới của Array đó.
 console.log("arrDemo.push(123) = ", arrDemo.push(123)); //* có thể thêm nhiều (123, 456)
@@ -401,6 +404,20 @@ if (john.BMI() > mark.BMI()) {
   console.log("BMI của John và Mark bằng nhau.");
 }
 
+//TODO Dùng function như tham số (Callback)
+function funcBark(onFinish) {
+  console.log("Barking...");
+  onFinish();
+}
+function soundOfBarking() {
+  console.log("Gâu Gâu Gâu.");
+}
+var myDog = {
+  bark: funcBark
+};
+
+myDog.bark(soundOfBarking);
+
 //==================================================================================================//
 console.log("========== Bài 9: Vòng lặp trong Javascript ==========");
 //! Bài 9: Vòng lặp trong Javascript
@@ -455,6 +472,18 @@ for (var index = 0; index < arrStudents.length; index++) {
 }
 console.log("arrStudents = ", arrStudents);
 
+//TODO Kiến thức For/of
+var employees = [
+  { name: "Thinh", age: 28 },
+  { name: "Hiroshi", age: 26 },
+  { name: "Maria", age: 32 }
+];
+
+for (var employee of employees) {
+  //* Lặp trong một mảng.
+  console.log(employee.name, employee.age);
+}
+
 //TODO Kiến thức For/in
 console.log("==================================");
 //* Mỗi học sinh có số lượng điểm khác nhau.
@@ -463,7 +492,8 @@ console.log("==================================");
 function calAverage() {
   var total = 0;
   var totalScores = 0;
-  for (key in this.scores) {
+  for (var key in this.scores) {
+    //* Lặp trong một object.
     total += 1;
     totalScores += this.scores[key];
     console.log("scores " + key + " = ", this.scores[key]);
@@ -479,7 +509,7 @@ var studentA = {
     physics: 7.5,
     chemistry: 5.4
   },
-  calAverage2: calAverage,
+  calAverage2: calAverage
 };
 
 var studentB = {
@@ -491,7 +521,7 @@ var studentB = {
     chemistry: 5.4,
     english: 6.5
   },
-  calAverage2: calAverage,
+  calAverage2: calAverage
 };
 
 console.log("TB StudentA = ", studentA.calAverage2());
