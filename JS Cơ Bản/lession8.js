@@ -1,10 +1,10 @@
-console.log('========== Bài 8: Object trong Javascript ==========');
+console.log("========== Bài 8: Object trong Javascript ==========");
 //TODO Bài 8: Object trong Javascript
 
 //TODO Cách 1:
 
 var student = {
-  fullname: 'Nguyễn Văn A',
+  fullname: "Nguyễn Văn A",
   year: 2000,
   scores: {
     maths: 9,
@@ -12,7 +12,7 @@ var student = {
     chemistry: 5
   },
   calAverage: function() {
-    console.log('Run calAverage');
+    console.log("Run calAverage");
 
     var maths = this.scores.maths;
     var physics = this.scores.physics;
@@ -22,25 +22,25 @@ var student = {
   }
 };
 
-console.log('student = ', student);
-console.log('fullName = ', student.fullname);
-console.log('scores = ', student.scores);
-console.log('scores.maths = ', student.scores.maths);
-console.log('scores.physics = ', student.scores.physics);
-console.log('scores.chemistry = ', student.scores.chemistry);
+console.log("student = ", student);
+console.log("fullName = ", student.fullname);
+console.log("scores = ", student.scores);
+console.log("scores.maths = ", student.scores.maths);
+console.log("scores.physics = ", student.scores.physics);
+console.log("scores.chemistry = ", student.scores.chemistry);
 
 var average = student.calAverage(); //! Method của object student
-console.log('average = ', average);
+console.log("average = ", average);
 
 //* This -> Con trỏ this -> Trỏ tới đối tượng hiện tại.
 
 //TODO Cách 2:
 
 var student2 = new Object();
-console.log('student2 = ', student2);
+console.log("student2 = ", student2);
 
 //! Thêm vào
-student2.fullname = 'Nguyễn Văn B';
+student2.fullname = "Nguyễn Văn B";
 student2.year = 2001;
 student2.scores = {
   maths: 8,
@@ -48,7 +48,7 @@ student2.scores = {
   chemistry: 5
 };
 student2.calAverage = function() {
-  console.log('Run calAverage');
+  console.log("Run calAverage");
 
   var maths = this.scores.maths;
   var physics = this.scores.physics;
@@ -59,9 +59,9 @@ student2.calAverage = function() {
 //? Cách khác: student2.calAverage = student.calAverage;
 //* End
 
-console.log('student2 = ', student2);
-console.log('student2.calAverage() = ', student2.calAverage());
-console.log('student2["fullname"] = ', student2['fullname']);
+console.log("student2 = ", student2);
+console.log("student2.calAverage() = ", student2.calAverage());
+console.log("student2['fullname'] = ", student2["fullname"]);
 
 //TODO Giải bài tập
 
@@ -70,37 +70,37 @@ function calBMI() {
 }
 
 var john = {
-  fullName: 'John',
+  fullName: "John",
   mass: 59,
   height: 1.65,
   BMI: calBMI
 };
 
 var mark = {
-  fullName: 'Mark',
+  fullName: "Mark",
   mass: 69,
   height: 1.7,
   BMI: calBMI
 };
 
-console.log('BMI John = ', john.BMI());
-console.log('BMI Mark = ', mark.BMI());
+console.log("BMI John = ", john.BMI());
+console.log("BMI Mark = ", mark.BMI());
 
 if (john.BMI() > mark.BMI()) {
-  console.log('BMI của John lớn hơn BMI của Mark.');
+  console.log("BMI của John lớn hơn BMI của Mark.");
 } else if (john.BMI() < mark.BMI()) {
-  console.log('BMI của Mark lớn hơn BMI của John.');
+  console.log("BMI của Mark lớn hơn BMI của John.");
 } else {
-  console.log('BMI của John và Mark bằng nhau.');
+  console.log("BMI của John và Mark bằng nhau.");
 }
 
 //TODO Dùng function như tham số (Callback)
 function funcBark(onFinish) {
-  console.log('Barking...');
+  console.log("Barking...");
   onFinish();
 }
 function soundOfBarking() {
-  console.log('Gâu Gâu Gâu.');
+  console.log("Gâu Gâu Gâu.");
 }
 var myDog = {
   bark: funcBark

@@ -1,22 +1,22 @@
-console.log('========== Bài 1: Biến và kiểu dữ liệu ==========');
+console.log("========== Bài 1: Biến và kiểu dữ liệu ==========");
 //TODO Bài 1: Biến và kiểu dữ liệu
 
-var firstName = 'John'; //* Biến kiểu string
+var firstName = "John"; //* Biến kiểu string
 var age = 28; //* Biến kiểu number
 
-console.log('Biến firstName = ', firstName);
-console.log('Biến age = ', age);
+console.log("Biến firstName = ", firstName);
+console.log("Biến age = ", age);
 
-console.log(firstName + ' ' + age); //! ép kiểu age (số) =>> String (chuỗi)
+console.log(firstName + " " + age); //! ép kiểu age (số) =>> String (chuỗi)
 
 var isMarried; //* Biến kiển luận lý True or False
 isMarried = false;
-job = 'teacher';
-console.log('isMarried = ', isMarried);
+job = "teacher";
+console.log("isMarried = ", isMarried);
 
-age = 'twenty eight'; //! Đột biến giá trị (Lúc đầu age = 28, lúc sau age = 'twenty eight')
+age = "twenty eight"; //! Đột biến giá trị (Lúc đầu age = 28, lúc sau age = "twenty eight")
 console.log(
-  firstName + ' is a ' + age + ' year old' + job + ' Is married? ' + isMarried
+  firstName + " is a " + age + " year old" + job + " Is married? " + isMarried
 );
 
 //TODO Toán tử trong JS
@@ -45,12 +45,12 @@ sum = a++ * b-- + --a * ++b;
  * 5   * 10  + 5   * 10 ; //! a = 5, b = 10
  *     50    +    50    ; //! a = 5, b = 10
  */
-console.log('sum = ', sum);
+console.log("sum = ", sum);
 
 //TODO Toán tử typeof => Dùng để xác định kiểu dữ liệu của biến tại thời điểm đó.
-console.log('typeof x = ', typeof x);
-console.log('typeof firstName = ', typeof firstName);
-console.log('typeof isMarried = ', typeof isMarried);
+console.log("typeof x = ", typeof x);
+console.log("typeof firstName = ", typeof firstName);
+console.log("typeof isMarried = ", typeof isMarried);
 
 //TODO Toán tử so sánh - Tất cả các giá trị so sánh đều trả về true hoặc false
 //* >,<,=,>=,<=,==,===,!=,!==
@@ -58,4 +58,4 @@ console.log('typeof isMarried = ', typeof isMarried);
 var number1 = 50;
 var number2 = 150;
 var average = (number1 + number2) / 2;
-console.log('(50 + 150) / 2 = ', average);
+console.log("(50 + 150) / 2 = ", average);
