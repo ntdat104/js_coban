@@ -87,4 +87,17 @@ jerry.sleep();
 var mickey = new Mouse("white", 10);
 mickey.sleep();
 
-console.log(jerry.sleep === mickey.sleep)
+console.log(jerry.sleep === mickey.sleep);
+
+//! JSON in Javascript
+var myDog = { name: "Milu", age: 1, dead: false };
+var myDogString = JSON.stringify(myDog);
+console.log("typeof myDogString = ", typeof myDogString);
+console.log("myDogString = ", myDogString);
+//TODO chuyển từ object sang string
+
+var myCatString = '{"name": "Tom", "age": 2, "dead": true}';
+var myCat = JSON.parse(myCatString);
+console.log("typeof myCat = ", typeof myCat);
+console.log("myCat = ", myCat);
+//TODO chuyển từ string sang object
