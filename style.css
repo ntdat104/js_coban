@@ -31,6 +31,7 @@
 .child-3 ul{
     flex-direction: row;
     list-style-type: none;
+    padding-left: 20px;
 }
 .child-3 ul li{
     display: inline-block;
