@@ -47,7 +47,7 @@ console.log("arrDemo = ", arrDemo);
 arrDemo[arrDemo.length] = "test2";
 console.log("arrDemo = ", arrDemo);
 
-//TODO Array.concat dùng để 2 Array lại với nhau.
+//TODO Array.concat dùng để nối 2 Array lại với nhau.
 //* VD1
 console.log("arrDemo.concat(arrDemo2) = ", arrDemo.concat(arrDemo2));
 
