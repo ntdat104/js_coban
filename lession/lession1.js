@@ -1,5 +1,5 @@
 console.log("========== Bài 1: Biến và kiểu dữ liệu ==========");
-//TODO Bài 1: Biến và kiểu dữ liệu
+//TODO Bài 1: Biến và kiểu dữ liệu (Variables & Data Types)
 
 var firstName = "John"; //* Biến kiểu string
 var age = 28; //* Biến kiểu number
