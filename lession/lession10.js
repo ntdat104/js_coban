@@ -34,7 +34,7 @@ console.log(mouse3);
 console.log(mouse4);
 
 //! Thực hành mèo và chuột
-var tom = {
+var cat = {
   name: "Tom",
   stomach: [],
   eat: function(mouse) {
@@ -49,16 +49,15 @@ function setMouse(name, color, age) {
   this.age = age;
 }
 
-var m1 = new setMouse("m1", "Màu Xanh", 20);
-var m2 = new setMouse("m2", "Màu Đỏ", 25);
-var m3 = new setMouse("m3", "Màu Vàng", 30);
+var jerry1 = new setMouse("jerry1", "Màu Xanh", 20);
+var jerry2 = new setMouse("jerry2", "Màu Đỏ", 25);
+var jerry3 = new setMouse("jerry3", "Màu Vàng", 30);
 
-tom
-  .eat(m1)
-  .eat(m2)
-  .eat(m3); //* Gọi nhiều lần trong 1 object bởi vì return this.
+cat.eat(jerry1).eat(jerry2).eat(jerry3); 
+//* Gọi nhiều lần trong 1 object bởi vì return this.
+//! Method chaining.
 
-console.log("Tom = ", tom);
+console.log("Tom = ", cat);
 
 //! Prototypes in JavaScript - Nguyên mẫu trong javascript
 function Mouse(color, weight) {
