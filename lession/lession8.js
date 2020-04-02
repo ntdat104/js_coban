@@ -11,7 +11,7 @@ var student = {
     physics: 7.5,
     chemistry: 5
   },
-  calAverage: function() {
+  calAverage: function() { //! Object method
     console.log("Run calAverage");
 
     var maths = this.scores.maths;
@@ -95,9 +95,9 @@ if (john.BMI() > mark.BMI()) {
 }
 
 //TODO Dùng function như tham số (Callback)
-function funcBark(onFinish) {
+function funcBark(onStart) {
   console.log("Barking...");
-  onFinish();
+  onStart();
 }
 function soundOfBarking() {
   console.log("Gâu Gâu Gâu.");
