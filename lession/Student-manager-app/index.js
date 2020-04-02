@@ -40,18 +40,15 @@ function showMenu(){
         case "1":
             showStudents();
             showMenu();
-            break;
         case "2":
             showCreatStudent();
             showMenu();
-            break;
         case "3":
             saveAndExit();
             break
         default:
             console.log("Wrong option");
             showMenu();
-            break;
     }
 }
 
