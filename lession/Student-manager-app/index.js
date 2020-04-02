@@ -46,9 +46,11 @@ function showMenu() {
     case "1":
       showStudents();
       showMenu();
+      break;
     case "2":
       creatStudent();
       showMenu();
+      break;
     case "3":
       saveAndExit();
       break;
