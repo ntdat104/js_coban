@@ -71,7 +71,7 @@ function Mouse(color, weight) {
    */
 }
 console.log(Mouse);
-console.log(Mouse.prototype); //! Prototypes = thuộc tính.
+console.log(Mouse.prototype);
 console.log(Mouse.prototype.constructor);
 console.log(Mouse.prototype.constructor === Mouse);
 
