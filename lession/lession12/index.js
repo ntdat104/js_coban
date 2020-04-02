@@ -1,3 +1,4 @@
+//TODO Học đọc và ghi file từ thư viện fs.
 var fs = require("fs");
 
 var readFile = fs.readFileSync("./song.txt", { encoding:"UTF8" });
