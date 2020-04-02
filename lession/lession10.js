@@ -79,6 +79,9 @@ Mouse.prototype.sleep = function() {
   //* dùng cách này tiết kiệm bộ nhớ hơn
   console.log(this.color + " Sleeping ...");
 };
+
+console.log(Mouse);
+
 var jerry = new Mouse("orange", 20);
 console.log("jerry = ", jerry);
 jerry.sleep();
