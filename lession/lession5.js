@@ -54,13 +54,13 @@ console.log("Tuổi của John3 = ", age);
 function printContent(firstName, job) {
   switch (job) {
     case "teacher":
-      console.log(firstname + " là một giáo viên!");
+      console.log(firstName + " là một giáo viên!");
       break;
     case "designer":
-      console.log(firstname + " là một người thiết kế!");
+      console.log(firstName + " là một người thiết kế!");
       break;
     default:
-      console.log(firstname + " làm một công việc nào đó?");
+      console.log(firstName + " làm một công việc nào đó?");
       break;
   }
 }
