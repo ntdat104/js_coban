@@ -95,9 +95,9 @@ if (john.BMI() > mark.BMI()) {
 }
 
 //TODO Dùng function như tham số (Callback)
-function funcBark(onStart) {
+function funcBark(callBack) {
   console.log("Barking...");
-  onStart();
+  callBack();
 }
 function soundOfBarking() {
   console.log("Gâu Gâu Gâu.");
