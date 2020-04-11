@@ -1,4 +1,4 @@
-//TODO Học đọc và ghi file từ thư viện fs.
+//TODO Học đọc và ghi file từ thư viện fs, hàm readFileSync
 var fs = require("fs");
 
 var dataFromJSON = fs.readFileSync("./data.json", { encoding:"UTF8" }); //TODO Đọc dữ liệu từ file data.json - Dữ liệu lấy ra là kiểu String

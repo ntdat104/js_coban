@@ -17,11 +17,11 @@ function loadDataFromJSON() {
 function showStudents() {
   for (var student of students) {
     //TODO Vòng lặp for/of để lấy các thuộc tính trong mảng studens
-    console.log(student.name, student.age);
+    console.log("Tên: " + student.name + ",", "Tuổi: " + student.age);
   }
 }
 
-function creatStudent() {
+function addStudent() {
   var name = readlineSync.question("Name: ");
   var age = readlineSync.question("Age: ");
   var student = {
@@ -38,7 +38,7 @@ function saveAndExit() {
 
 function showMenu() {
   console.log("1. Show all students");
-  console.log("2. Create a new students");
+  console.log("2. Add a new students");
   console.log("3. Save & Exit");
 
   var option = readlineSync.question("> ");
@@ -48,7 +48,7 @@ function showMenu() {
       showMenu();
       break;
     case "2":
-      creatStudent();
+      addStudent();
       showMenu();
       break;
     case "3":

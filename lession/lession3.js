@@ -2,37 +2,37 @@ console.log("========= Bài 3: Câu lệnh Switch/Case trong Javascript ========
 //TODO Bài 3: Câu lệnh Switch/Case trong Javascript
 
 //TODO Trường hợp 1
-var job = "abc";
+var fruit = "Banana";
 
-switch (job) {
-  case "designer":
-    console.log(firstname + " là một designer");
+switch (fruit) {
+  case "Banana":
+    console.log("It is", fruit);
     break;
-  case "worker":
-    console.log(firstname + " là một worker");
+  case "Orange":
+    console.log("It is", fruit);
     break;
-  case "teacher":
-    console.log(firstname + " là một teacher");
+  case "Apple":
+    console.log("It is", fruit);
     break;
   default:
-    console.log(firstname + " là một người có công việc nào đó???");
+    console.log("I have never heard of", fruit);
     break;
 }
 
 //TODO Trường hợp 2
-var age = 20;
+var age = 45;
 
 switch (true) {
   case age < 13:
-    console.log(firstname + " là một cậu học sinh");
+    console.log("I am", age);
     break;
-  case age >= 13 && age <= 18:
-    console.log(firstname + " là một cậu bé tuổi teen");
+  case 13 <= age && age <= 18:
+    console.log("I am", age);
     break;
-  case age > 18 && age < 30:
-    console.log(firstname + " là một người đàn ông trung niên");
+  case 18 < age && age < 30:
+    console.log("I am", age);
     break;
   default:
-    console.log(firstname + " là một người đàn ông trưởng thành");
+    console.log("Now, I am", age);
     break;
 }

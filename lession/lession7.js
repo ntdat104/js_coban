@@ -40,6 +40,10 @@ if (arrDemo.indexOf(true) !== -1) {
   console.log("John chưa kết hôn.");
 }
 
+//TODO Array.from dùng để chuyển string thành 1 array.
+var myArr = Array.from("ABCDEFG");
+console.log("myArr = ", myArr);
+
 //TODO Truy suất vào chỉ số không hợp lệ trong mảng
 console.log("arrDemo = ", arrDemo);
 arrDemo[8] = "test";
